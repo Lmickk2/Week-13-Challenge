@@ -2,6 +2,13 @@ const express = require('express');
 const routes = require('./routes');
 // import sequelize connection
 
+const sql = mysql.createConnection({
+  host: "localhost",
+  port: 8889,
+  user: "root",
+  password: "root"
+})
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 
